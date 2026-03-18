@@ -1,0 +1,99 @@
+/* colors */
+$primary-color:rgb(42, 0, 86);
+$white: white;
+$black: black;
+
+/* fonts */
+$button-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+$main-font: 'Open Sans', sans-serif;
+
+/* mixins */
+
+@mixin wrapper-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10em;
+    border-radius: 3rem;
+    min-height: 30vh;
+    margin: 0 20px;
+
+    .langauge-item {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 5px;
+    }
+    h6 {
+        font-size: 15px;
+        font-family: $main-font;
+        font-weight: 700;
+    }
+}
+
+/* body */
+*
+{
+margin: 0;
+padding: 0;
+}
+
+/* Banner */
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: $black;
+color: $white;
+height: 10vh;
+
+h1{
+    margin-left: 10px;
+}
+
+ul{
+    display: flex;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: $button-font;
+
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 30px;
+    &:hover{
+            border: 2px solid white;
+            background-color: white;
+            color: black;
+            }
+}
+}
+
+/* wrapper card */
+
+.wrapper-frontend {
+    @include wrapper-language;
+    box-shadow: -6px 3px 10px -10px;
+}
+
+.wrapper-backend {
+    @include wrapper-language;
+    box-shadow: 6px 0px 10px -10px;
+}
+
+.wrapper-tools {
+    @include wrapper-language;
+    box-shadow: -6px -3px 10px -10px;
+}
+
+
+
