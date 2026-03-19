@@ -6,9 +6,10 @@ $black: black;
 /* fonts */
 $button-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
 $main-font: 'Open Sans', sans-serif;
+$second-font: 'Roboto Condensed', sans-serif;
+
 
 /* mixins */
-
 @mixin wrapper-language {
     display: flex;
     justify-content: center;
@@ -34,6 +35,18 @@ $main-font: 'Open Sans', sans-serif;
         font-weight: 700;
     }
 }
+@mixin inputs {
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    outline: none;
+    border: none;
+    &:focus {
+        border: 3px solid rgba(243, 37, 37, 0.919);
+    }
+}
 
 /* body */
 *
@@ -42,7 +55,7 @@ margin: 0;
 padding: 0;
 }
 
-/* Banner */
+/* banner */
 nav {
 display: flex;
 justify-content: space-between;
@@ -78,7 +91,7 @@ li{
 }
 }
 
-/* wrapper card */
+/* skills */
 
 .wrapper-frontend {
     @include wrapper-language;
@@ -93,7 +106,65 @@ li{
 .wrapper-tools {
     @include wrapper-language;
     box-shadow: -6px -3px 10px -10px;
+    margin-bottom: 20vh;
 }
 
+/* contact */
+
+footer {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $black;
+    padding: 8vh 0;
+
+h2 {
+    color: $white;
+    font-size: 3rem;
+    font-family: $second-font;
+    align-self: center;
+    margin-bottom: 5vh;
+    font-weight: 800;
+}
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 30vw;
+
+label {font-size: 20px;
+       font-weight: 500;
+       color: $white;
+       font-family: $main-font}
+
+input {
+    @include inputs;
+    min-height: 5vh;
+}
+textarea{
+    @include inputs;
+    padding-top: 10px;
+    min-height: 30vh;
+} 
+
+button {
+    background-color: $black;
+    color: $white;
+    font-weight: 700;
+    border: 3px solid $white;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px 0;
+    cursor: pointer;
+    align-self: center;
+    width: 10vw;
+&:hover {
+    opacity: 0.7;
+}
+}
+}
 
 
