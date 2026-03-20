@@ -3,13 +3,12 @@
 function Section () {
     return (
          <header>
-        <h1>Presentation</h1>
-        <div>Prayer Onaiwu</div>
-        <div>22 years old</div>
+        <h2>PRESENTATION</h2>
         <div>Full-Stack developer, specialized in the front-end stack;
             building responsive and accessible user interfaces. Also focused in the back-end stack,
             structuring robust business logic, ensuring scalability and securing data.
         </div>
+        <div>I also love creating different type of designs, svgs and products in Adobe Illustrator.</div>
     </header>
     );
 }

@@ -16,7 +16,7 @@ import gitSvg from "../assets/git.svg"
 
 function Skill () {
     return(
-<>
+<section>
 <div className="wrapper-frontend">
     <Language image={htmlSvg} name="Html"/>
     <Language image={cssSvg} name="Css"/>
@@ -38,7 +38,7 @@ function Skill () {
     <Language image={gitHubSvg} name="GitHub"/>
     <Language image={gitSvg} name="Git"/>
 </div>
-</>
+</section>
     );
 }
 
