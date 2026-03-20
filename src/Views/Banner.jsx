@@ -1,7 +1,7 @@
 import Banner from "../Components/banner.jsx";
 
 
-function HomePage () {
+function BannerPage () {
     return (
         <>
         <Banner/>
@@ -9,4 +9,4 @@ function HomePage () {
     );
 }
 
-export default HomePage
+export default BannerPage

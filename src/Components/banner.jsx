@@ -2,12 +2,15 @@
 
 function Banner() {
     return(
-<nav>    
-    <h1>Prayer Onaiwu</h1>
+<nav>  
+    <div className="wrapper-banner"> 
+    <h1>PO |</h1>
+    <div>Frontend Developer</div>
+    </div>
     <ul>
     <li>Presentation</li>
-    <li>Skills</li>
     <li>Portfolio</li>
+    <li>Skills</li>
     <li>Contact</li>
     <li>Curriculum</li>
     </ul>
