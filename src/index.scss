@@ -100,16 +100,39 @@ li{
     cursor: pointer;
     margin: 0 20px;
     &:hover{
-            border-bottom: 3px solid $black;
+            border-bottom: 2px solid $black;
             padding-bottom: 5px;
             color: $black;
             }
 }
 }
 
-/* presentation */
+/* welcome */
 
 header {
+min-height: 70vh;
+
+button {
+font-size: 15px;
+border: 2.5px solid $black;
+font-weight: 550;
+padding: 10px 15px;
+border-radius: 10px;
+background-color: $white;
+color: $black;
+width: 8rem;
+
+&:hover{
+    opacity: 0.5;    
+    cursor: pointer;
+}
+}
+
+}
+
+/* presentation */
+
+section {
     display: flex;
     flex-direction: column;
     justify-content: start;
