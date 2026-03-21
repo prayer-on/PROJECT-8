@@ -4,11 +4,11 @@ function Section () {
     return (
          <section>
         <h2>PRESENTATION</h2>
-        <div>Full-Stack developer, specialized in the front-end stack;
-            building responsive and accessible user interfaces. Also focused in the back-end stack,
-            structuring robust business logic, ensuring scalability and securing data.
+        <div><strong><em>Full-Stack developer</em></strong>, specialized in the front-end stack;
+            building responsive and accessible user interfaces. <strong><em>Also focused</em></strong> in the <strong><em>back-end</em></strong> stack,
+            structuring <strong><em>robust business logic, ensuring scalability</em></strong> and <strong><em>securing data.</em></strong>
         </div>
-        <div>I also love creating different type of designs, svgs and products in Adobe Illustrator.</div>
+        <div>I love creating different type of <strong><em>designs, svgs</em></strong> and <strong><em>products</em></strong> in <strong><em>Adobe Illustrator.</em></strong></div>
     </section>
     );
 }

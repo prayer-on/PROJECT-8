@@ -3,7 +3,7 @@
 function Footer () {
     return(
         <footer>
-            <h2>Contact Me</h2>
+            <h2>CONTACT ME</h2>
             <form>
                 <label for= "email-adress">Email-address:</label>
                 <input type="email" id="email-adress" name="email_contact" placeholder="john.wern@gmail.com" required/>
