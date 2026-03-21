@@ -4,7 +4,6 @@ $white: white;
 $black: black;
 
 header strong {color: $primary-color;}
-section strong {color: rgba(255, 0, 0, 0.8);}
 
 
 /* fonts */
@@ -28,12 +27,23 @@ $second-font: 'Roboto Condensed', sans-serif;
     .langauge-item {
         display: flex;
         flex-direction: column;
+        transition-property: all;
+        transition-duration: 20s;
+        transition-timing-function: ease-out;
+        transition-delay: 500s;
     }
     img {
         width: 70px;
         height: 70px;
         margin-bottom: 5px;
+
+    &:hover {
+        width: 73px;
+        height: 73px;
+        cursor:grab;
     }
+    }
+
     h6 {
         font-size: 15px;
         font-family: $main-font;
@@ -122,7 +132,7 @@ align-items: center;
 font-family: $second-font;
 
 h1{
-    font-size: 9rem;
+    font-size: 8rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -132,18 +142,17 @@ div {
 }
 
 button {
-font-size: 18px;
-border: 2.5px solid $black;
+font-size: 15px;
+border: 2px solid $black;
 font-weight: 600;
 padding: 10px 15px;
-border-radius: 10px;
+border-radius: 5px;
 background-color: $white;
 color: $black;
 width: 9rem;
 
 &:hover{
-    border-color: $primary-color; 
-    color: $primary-color;  
+    background-color: $primary-color; 
     cursor: pointer;
 }
 }
@@ -186,7 +195,9 @@ h2{
 
 div {
     text-align: start;
-    max-width: 50vw
+    max-width: 50vw;
+    font-weight: 200
+    
     }
 }
 
@@ -231,14 +242,14 @@ h2 {
 footer form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     margin: 0 30vw;
     
 
 label {font-size: 20px;
-       font-weight: 500;
+       font-weight: 350;
        color: $white;
-       font-family: $main-font}
+       font-family: $second-font}
 
 input {
     @include inputs;
@@ -247,15 +258,15 @@ input {
 textarea{
     @include inputs;
     padding-top: 10px;
-    min-height: 30vh;
+    min-height: 20vh;
 } 
 
 button {
     background-color: $black;
     color: $white;
     font-family: $button-font;
-    font-weight: 700;
-    border: 3px solid $white;
+    font-weight: 600;
+    border: 2px solid $white;
     border-radius: 10px;
     margin-top: 30px;
     padding: 10px 0;
