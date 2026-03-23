@@ -182,7 +182,7 @@ section {
     padding: 5rem 20vw;
     font-size: 25px;
     font-weight: 300;
-    margin: 0 0 30vh 0;
+    margin-bottom: 30vh;
     min-height: 50vh;
     font-family: $second-font;
 
@@ -199,6 +199,34 @@ div {
     font-weight: 200
     
     }
+}
+
+/* portfolio */
+
+main h1{
+    margin-bottom: 7vh;
+}
+
+.wrapper-container-card
+{
+margin-bottom: 20vh;
+
+div {
+    border: 2px solid $black;
+    border-radius: 10px;
+    min-height: 40vh;
+    margin: 0 30vw;
+    overflow: hidden;
+
+img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 11/4;
+}
+p {
+    padding: 5px 15px
+}
+}
 }
 
 /* skills */
