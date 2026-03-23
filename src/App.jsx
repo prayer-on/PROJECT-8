@@ -15,7 +15,7 @@ function App() {
     <PresentationPage />
     <PortfolioPage />
     <SkillsPage />
-    <ContactPage/>
+    <ContactPage />
     </>
    
  
