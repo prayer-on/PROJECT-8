@@ -1,16 +1,11 @@
-import htmlImage from '../assets/html.jpg'
+ 
 
-function Card (props) {
+function Card ({image_card, description}) {
     return(
-        <main>           
-    <h1>My Portfolio</h1>
-        <div className="wrapper-container-card">
-            <div className="wrapper-card">
-            <img src={props.image}></img>
-            <p>{props.description}</p>
-            </div>
+        <div className="wrapper-card">
+            <img src={image_card}></img>
+            <p>{description}</p>
         </div>
-    </main> 
     );
 }
 

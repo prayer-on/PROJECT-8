@@ -10,7 +10,7 @@ function Banner() {
 </div>
     <ul>
     <li>Presentation</li>
-    <li>Portfolio</li>
+    <li>Projects</li>
     <li>Skills</li>
     <li>Contact</li>
     <li>Curriculum</li>
