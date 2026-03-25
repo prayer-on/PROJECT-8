@@ -160,7 +160,7 @@ width: 9rem;
 
 .wrapper-button {
     display: flex;
-    margin-top: 3rem;
+    margin: 3rem 0;
     gap: 10px;
 
 img {
@@ -182,7 +182,7 @@ section {
     padding: 5rem 20vw;
     font-size: 25px;
     font-weight: 300;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
     min-height: 50vh;
     font-family: $second-font;
 
@@ -205,20 +205,32 @@ div {
 
 .wrapper-card {
     border: 2px solid $black;
+    color: $black;
     border-radius: 10px;
-    min-height: 40vh;
-    margin: 0 30vw;
-    margin-bottom: 15px;
+    min-width: 33vw;
+    min-height: 30vh;
+    margin: 0 20vw;
+    margin-bottom: 20px;
     overflow: hidden;
-    cursor: pointer;
+        
+&:hover {
+    color: $white;
+    border: 2.5px solid $primary-color;
+    background-color: $primary-color;
+    cursor: default;
+}
 
 img {
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 11/4;
+    aspect-ratio: 16/9;
 }
 p {
-    padding: 5px 15px
+    padding: 20px 25px;
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
 }
 }
 
@@ -226,33 +238,44 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15vh;
+
+.btn-language:hover {
+    cursor: pointer;
+}
+
 
 button {
     width: 8vw;
-    border-radius: 20px;
-    font-family: $button-font;
-    font-weight: 600;
-    color: $primary-color;
-    border: 1.5px solid $primary-color;
+    border-radius: 30px;
+    border: 1.5px solid $black;
     background-color: $white;
-    padding: 5px 10px;
-    cursor: pointer;
+    padding: 5px 15px;
+    cursor: default;
+    
 &:hover {
-    color: $white;
     background-color: $primary-color;
+    border: 2.5px solid $primary-color;
 }
 
 img {
-    width: 20px;
+    width: 25px;
 }
 }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* skills */

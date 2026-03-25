@@ -1,9 +1,8 @@
 
 
-function Button ({onClick, name, image_language}) {
+function Button ({onClick, image_language, className}) {
     return(
-        <button className="btn-project" onClick={onClick}>
-            <span>{name}</span>
+        <button className={`${className} btn-project`} onClick={onClick}>
             <img src={image_language} />
         </button>
     );
