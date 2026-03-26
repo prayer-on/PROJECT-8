@@ -5,7 +5,6 @@ $black: black;
 
 header strong {color: $primary-color;}
 
-
 /* fonts */
 $button-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
 $main-font: 'Open Sans', sans-serif;
@@ -62,9 +61,21 @@ $second-font: 'Roboto Condensed', sans-serif;
         border: 3px solid $primary-color;
     }
 }
-@keyframes infinite-rotation {
+@keyframes logo-rotation {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes card-rotation {
+    0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    50% {
+        transform: rotateX(0) rotateY(90deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
 }
 
 /* body */
@@ -90,6 +101,7 @@ box-shadow: 0 -1px 15px -10px $black;
 background-color: $white;
 position: sticky;
 top: 0;
+z-index: 2;
 
 h1{
     margin-left: 10px;
@@ -98,7 +110,7 @@ h1{
     cursor: grab;
 
 &:hover{
-    animation: infinite-rotation 0.7s linear 0.1s infinite;
+    animation: logo-rotation 0.3s linear 0.1s infinite;
     color: $primary-color;
 }
 
@@ -126,10 +138,11 @@ li{
     transition: padding-bottom 0.4s ease-out;
 
     &:hover{
-            border-bottom: 2px solid $black;
+            border-bottom: 2px solid $primary-color;
             padding-bottom: 5px;
-            color: $black;
+            color: $primary-color;
             }
+    &:active{opacity: 0.7;}
 }
 }
 
@@ -179,7 +192,10 @@ transition: background-color 0.15s ease;
 
 img {
     width: 1.5rem;
-    filter: $primary-color;
+}
+
+&:active{
+    opacity: 0.7;
 }
 }
 
@@ -218,18 +234,22 @@ div {
 /* projects */
 
 .wrapper-card {
-    color: $black;
     border-radius: 10px;
     box-shadow: 0 0 0 1px $primary-color;
     min-width: 33vw;
-    min-height: 30vh;
+    height: 65vh;
     margin: 0 20vw;
     margin-bottom: 20px;
     overflow: hidden;
-    transition: border 0.15s ease-in;
+    transition: border 0.1s ease-out;
+    cursor: pointer;
 
-        
 &:hover {
+    border: 2.5px solid $primary-color;
+}
+
+&:focus{
+    animation: card-rotation 1s ease-in-out 0.1s;
     border: 2.5px solid $primary-color;
 }
 
@@ -238,8 +258,12 @@ img {
     aspect-ratio: 16/9;
 }
 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
     color: $primary-color;
-    padding: 20px 25px;
+    padding: 0 25px;
     font-family: $main-font;
     font-size: 15px;
     font-weight: 650;

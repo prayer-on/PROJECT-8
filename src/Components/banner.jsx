@@ -5,7 +5,7 @@ function Banner() {
 
 <nav>  
 <div className="wrapper-banner"> 
-    <h1>PO|</h1>
+    <h1 tabIndex={0}>PO|</h1>
     <div>Frontend Developer</div>
 </div>
     <ul>
