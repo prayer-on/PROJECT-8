@@ -19,6 +19,4 @@ function App() {
   )
 }
 
-/* mettere nel link di welcome.jsx il link dell'account di GitHub */
-
 export default App

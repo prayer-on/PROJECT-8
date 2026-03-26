@@ -3,7 +3,7 @@ import gitHubSvg from "../assets/github_light.svg"
 function Welcome () {
 
 const gitAccount = () => {
- window.open("https://github.com", "_blank");
+ window.open("https://github.com/prayer-on", "_blank");
 }
     return(
         <header>

@@ -12,7 +12,7 @@ $main-font: 'Open Sans', sans-serif;
 $second-font: 'Roboto Condensed', sans-serif;
 
 
-/* mixins */
+/* mixins/keyframes */
 
 @mixin wrapper-language {
     display: flex;
@@ -27,15 +27,13 @@ $second-font: 'Roboto Condensed', sans-serif;
     .langauge-item {
         display: flex;
         flex-direction: column;
-        transition-property: all;
-        transition-duration: 20s;
-        transition-timing-function: ease-out;
-        transition-delay: 500s;
+
     }
     img {
         width: 70px;
         height: 70px;
         margin-bottom: 5px;
+        transition: all 0.15s ease; 
 
     &:hover {
         width: 73px;
@@ -58,9 +56,15 @@ $second-font: 'Roboto Condensed', sans-serif;
     width: 100%;
     outline: none;
     border: none;
+    transition: border 0.1s ease-out; 
+
     &:focus {
         border: 3px solid $primary-color;
     }
+}
+@keyframes infinite-rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* body */
@@ -91,7 +95,13 @@ h1{
     margin-left: 10px;
     font-family: $main-font;
     font-weight: 400;
-    cursor: pointer;
+    cursor: grab;
+
+&:hover{
+    animation: infinite-rotation 0.7s linear 0.1s infinite;
+    color: $primary-color;
+}
+
 }
 
 div {
@@ -103,6 +113,7 @@ div {
 ul{
     display: flex;
     margin-right: 10px;
+    gap: 30px;
     font-size: 15px;
     font-weight: 300;
     font-family: $button-font;
@@ -112,7 +123,8 @@ ul{
 li{
     list-style: none;
     cursor: pointer;
-    margin: 0 20px;
+    transition: padding-bottom 0.4s ease-out;
+
     &:hover{
             border-bottom: 2px solid $black;
             padding-bottom: 5px;
@@ -150,6 +162,8 @@ border-radius: 5px;
 background-color: $white;
 color: $black;
 width: 9rem;
+transition: background-color 0.15s ease; 
+
 
 &:hover{
     background-color: $primary-color; 
@@ -204,32 +218,31 @@ div {
 /* projects */
 
 .wrapper-card {
-    border: 2px solid $black;
     color: $black;
     border-radius: 10px;
+    box-shadow: 0 0 0 1px $primary-color;
     min-width: 33vw;
     min-height: 30vh;
     margin: 0 20vw;
     margin-bottom: 20px;
     overflow: hidden;
+    transition: border 0.15s ease-in;
+
         
 &:hover {
-    color: $white;
     border: 2.5px solid $primary-color;
-    background-color: $primary-color;
-    cursor: default;
 }
 
 img {
     width: 100%;
-    object-fit: cover;
     aspect-ratio: 16/9;
 }
 p {
+    color: $primary-color;
     padding: 20px 25px;
     font-family: $main-font;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 650;
     text-align: center;
 }
 }
@@ -253,16 +266,17 @@ p {
 
 
 button {
-    width: 8vw;
+    width: 7vw;
     border-radius: 30px;
-    border: 1.5px solid $black;
+    border: none;
+    box-shadow: 0 0 0 1px $primary-color;
     background-color: $white;
     padding: 5px 15px;
     cursor: default;
+    transition: border 0.15s ease-in;
     
 &:hover {
-    background-color: $primary-color;
-    border: 2.5px solid $primary-color;
+    border: 1.5px solid $primary-color;
 }
 
 img {
@@ -350,6 +364,7 @@ button {
     cursor: pointer;
     align-self: center;
     width: 10vw;
+
 &:hover {
     opacity: 0.7;
 }
@@ -377,9 +392,7 @@ button {
         display: flex;
         flex-direction: column;
         gap: 15px;
-    li{
         margin: 0;
-    }
     }
     }
 }
