@@ -3,7 +3,8 @@ $primary-color: rgba(0, 0, 255, 0.55);
 $white: white;
 $black: black;
 
-#home, #presentation, #projects, #skills {scroll-margin-top: 150px;}
+#home, #presentation, #projects {scroll-margin-top: 150px;}
+#skills {scroll-margin-top: 80px;}
 
 /* fonts */
 $button-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
@@ -41,11 +42,11 @@ $second-font: 'Roboto Condensed', sans-serif;
     }
     }
 
-    h6 {
+    h3 {
         font-size: 15px;
         font-family: $main-font;
         font-weight: 700;
-        color: $primary-color;
+        color: $black;
     }
 }
 @mixin inputs {
@@ -66,7 +67,6 @@ $second-font: 'Roboto Condensed', sans-serif;
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
 @keyframes card-rotation {
     0% {
         transform: rotateX(0) rotateY(0) rotateZ(0);
@@ -267,10 +267,10 @@ div {
 /* projects */
 
 .sub-title {
-    color: $primary-color;
+    color: $black;
     font-family: $main-font;
     margin-bottom: 1vh;
-    font-weight: 600;
+    font-weight: 650;
     font-size: 20px;
 }
 

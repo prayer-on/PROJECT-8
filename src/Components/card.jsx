@@ -11,7 +11,7 @@ function Card ({name, image_card, description}) {
         <div id="projects" className="wrapper-card" tabIndex={0}
         onFocus={() => setHasRotate(true)}
         onBlur={() => setHasRotate(false)}>
-            {hasRotate? <p>{description}</p> : <img src={image_card}></img>}
+            {hasRotate? <p>{description}</p> : <img src={image_card} alt={`Screenshot of the ${name} project`}></img>}
         </div>
         </>
     );
