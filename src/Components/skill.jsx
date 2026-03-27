@@ -17,7 +17,7 @@ import gitSvg from "../assets/git.svg"
 function Skill () {
     return(
 <>
-<div className="wrapper-frontend">
+<div id="skills" className="wrapper-frontend">
     <Language image={htmlSvg} name="Html"/>
     <Language image={cssSvg} name="Css"/>
     <Language image={javascriptSvg} name="JavaScript"/>

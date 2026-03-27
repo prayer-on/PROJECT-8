@@ -2,7 +2,7 @@
 
 function Footer () {
     return(
-        <footer>
+        <footer id="contact">
             <h2>CONTACT ME</h2>
             <form>
                 <label for= "email-adress">Email-address:</label>

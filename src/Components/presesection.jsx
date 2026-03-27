@@ -2,7 +2,7 @@
 
 function Section () {
     return (
-         <section>
+         <section id="presentation">
         <h2>PRESENTATION</h2>
         <div><strong><em>Full-Stack developer</em></strong>, specialized in the front-end stack;
             building responsive and accessible user interfaces. <strong><em>Also focused</em></strong> in the <strong><em>back-end</em></strong> stack,

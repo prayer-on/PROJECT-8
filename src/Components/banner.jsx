@@ -6,14 +6,14 @@ function Banner() {
 <nav>  
 <div className="wrapper-banner"> 
     <h1 tabIndex={0}>PO|</h1>
-    <div>Frontend Developer</div>
+    <div><a href="#home">Frontend Developer</a></div>
 </div>
     <ul>
-    <li>Presentation</li>
-    <li>Projects</li>
-    <li>Skills</li>
-    <li>Contact</li>
-    <li>Curriculum</li>
+    <li><a href="#presentation">Presentation</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#curriculum">Curriculum</a></li>
     </ul>
 </nav>
 

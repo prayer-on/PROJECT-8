@@ -12,7 +12,9 @@ function App() {
     <BannerPage />
     <WelcomePage />
     <PresentationPage />
+    <h1 className='title'>MY PROJECTS</h1>
     <ProjectPage />
+    <h2 className='title'>MY SKILLS</h2>
     <SkillsPage />
     <ContactPage />
     </>

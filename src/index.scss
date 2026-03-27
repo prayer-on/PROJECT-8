@@ -3,7 +3,7 @@ $primary-color: rgba(0, 0, 255, 0.55);
 $white: white;
 $black: black;
 
-header strong {color: $primary-color;}
+#home, #presentation, #projects, #skills {scroll-margin-top: 150px;}
 
 /* fonts */
 $button-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
@@ -45,6 +45,7 @@ $second-font: 'Roboto Condensed', sans-serif;
         font-size: 15px;
         font-family: $main-font;
         font-weight: 700;
+        color: $primary-color;
     }
 }
 @mixin inputs {
@@ -78,11 +79,25 @@ $second-font: 'Roboto Condensed', sans-serif;
     }
 }
 
-/* body */
+/* body/html */
 *
 {
 margin: 0;
 padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* App */
+
+.title {
+    font-family: $second-font;
+    margin-bottom: 8vh;
+    font-size: 70px;
+    color: $primary-color;
+    text-align: center;
 }
 
 /* banner */
@@ -120,6 +135,16 @@ div {
       font-family: $button-font;
       font-size: 15px;
       font-weight: 200;
+a {
+    text-decoration: none;
+    color: inherit;
+&:hover{
+    color: $primary-color;
+}
+&:active{
+    opacity: 0.7;
+}
+}
 }
 
 ul{
@@ -129,7 +154,6 @@ ul{
     font-size: 15px;
     font-weight: 300;
     font-family: $button-font;
-
 }
 
 li{
@@ -143,10 +167,19 @@ li{
             color: $primary-color;
             }
     &:active{opacity: 0.7;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 }
 }
 
 /* welcome */
+
+header strong {
+    color: $primary-color;
+}
 
 header {
 min-height: 70vh;
@@ -204,7 +237,7 @@ img {
 section {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     gap: 2rem;
     color: $white;
     background-color: $black; 
@@ -212,7 +245,7 @@ section {
     padding: 5rem 20vw;
     font-size: 25px;
     font-weight: 300;
-    margin-bottom: 20vh;
+    margin-bottom: 25vh;
     min-height: 50vh;
     font-family: $second-font;
 
@@ -233,6 +266,14 @@ div {
 
 /* projects */
 
+.sub-title {
+    color: $primary-color;
+    font-family: $main-font;
+    margin-bottom: 1vh;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .wrapper-card {
     border-radius: 10px;
     box-shadow: 0 0 0 1px $primary-color;
@@ -249,7 +290,7 @@ div {
 }
 
 &:focus{
-    animation: card-rotation 1s ease-in-out 0.1s;
+    animation: card-rotation 1s ease 0.1s;
     border: 2.5px solid $primary-color;
 }
 
@@ -314,6 +355,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh; 
 }
 
 /* skills */
