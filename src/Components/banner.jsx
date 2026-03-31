@@ -1,12 +1,7 @@
 import CV from "../assets/Prayer_Onaiwu_CV.pdf"
 
 function Banner() {
-
-    const curriculmVitae = (e) => {
-    e.preventDefault();
-    window.open(CV, "_blank");
-    }
-
+    
     return(
 <nav>  
 <div className="wrapper-banner"> 
@@ -18,7 +13,7 @@ function Banner() {
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a onClick={curriculmVitae}>Curriculum</a></li>
+    <li><a href={CV} target="_blank" rel="noreferrer">Curriculum</a></li>
     </ul>
 </nav>
 
