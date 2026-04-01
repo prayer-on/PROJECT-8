@@ -1,4 +1,4 @@
-import CV from "../assets/Prayer_Onaiwu_CV.pdf"
+import CV from "../assets/Prayer_Onaiwu_CV_English.pdf"
 
 function Banner() {
     
