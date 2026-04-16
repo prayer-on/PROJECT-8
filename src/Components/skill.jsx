@@ -1,6 +1,7 @@
 import Language from "./language.jsx";
 import reactSvg from "../assets/react_dark.svg"
 import javascriptSvg from "../assets/javascript.svg"
+import typescriptSvg from "../assets/typescript.svg"
 import htmlSvg from "../assets/html5.svg"
 import cssSvg from "../assets/css_old.svg"
 import nodeSvg from "../assets/nodejs-icon-logo-svgrepo-com.svg"
@@ -21,6 +22,7 @@ function Skill () {
     <Language image={htmlSvg} name="Html"/>
     <Language image={cssSvg} name="Css"/>
     <Language image={javascriptSvg} name="JavaScript"/>
+    <Language image={typescriptSvg} name="TypeScript"/>
     <Language image={reactSvg} name="React.js"/>
     <Language image={sassSvg} name="Sass"/>
 </div>
