@@ -1,12 +1,12 @@
 # PROJECT-8
 <h3>📖 Description:</h3>
 
-- My personal portfolio, where you can see all of my works and skills.
+- My personal portfolio website, showcasing my projects and skills.
 
 
 <h3>🚀 Demo:</h3>
 
-- [https://vercel.com/prayer-on/prayer_onaiwu_portfolio/HaMNaLDdxMaXUu16dX8Cv15GwKG1]
+- [Live Preview](https://prayeronaiwuportfolio.vercel.app/)
 
 
 <h3>🛠️ Technologies:</h3>
@@ -15,9 +15,13 @@
 - Sass
 
 
-<h3>💻 Functionality:</h3>
+<h3>💻 Functionalities:</h3>
 
-- View my web developer career
+- Explore my professional journey and projects
+- Responsive navigation across all devices
+- Direct integration with GitHub and downloadable CV
+- Interactive showcase of web development projects
+
 
 <h3>📸 Screenshot:</h3>
 
@@ -40,7 +44,12 @@ To run this project locally, you can follow these steps:
 git clone https://github.com/prayer-on/PROJECT-8.git
 ```
 
-2. Start the server:
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the server:
 ```bash
 npm run dev
 ```
@@ -48,16 +57,16 @@ npm run dev
 
 <h3>🧠 What I've learned:</h3>
 
-- Create a modern responsive and accessible UI
-- Link my GitHub profile and projects.
-- Add my CV in the portfolio
-- CSS transitions and animations
-- 
+- Building modern, responsive, and accessible UIs
+- Integrating GitHub links
+- PDF CV integration
+- Managing smooth CSS transitions and keyframe animations
+
 
 <h3>📈 Improvements:</h3>
 
-- Add more projects
-- Implement the backend, connecting the form with my e-mail adress
+- Expanding the project gallery
+- Implementing a backend service to connect the contact form to my email
 
 
 <h3>👤 Author:</h3>
