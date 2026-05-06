@@ -1,4 +1,5 @@
-import CV from "../assets/Prayer_Onaiwu_CV_English.pdf"
+import CVengfr from "../assets/Prayer_Onaiwu_CV_ENG/FR.pdf"
+
 
 function Banner() {
     
@@ -13,7 +14,7 @@ function Banner() {
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href={CV} target="_blank" rel="noreferrer">Curriculum</a></li>
+    <li><a href={CVengfr} target="_blank" rel="noreferrer">Curriculum ENG/FR</a></li>
     </ul>
 </nav>
 
