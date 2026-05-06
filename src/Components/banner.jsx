@@ -1,4 +1,4 @@
-import CVengfr from "../assets/Prayer_Onaiwu_CV_ENG/FR.pdf"
+import CVengfr from "../assets/Prayer_Onaiwu_CV_ENGFR.pdf"
 
 
 function Banner() {
