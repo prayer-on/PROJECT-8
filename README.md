@@ -45,12 +45,17 @@ To run this project locally, you can follow these steps:
 git clone https://github.com/prayer-on/PROJECT-8.git
 ```
 
-2. Install dependencies:
+2. Select the Project folder:
+```bash
+cd PROJECT-8
+```
+
+3. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the server:
+4. Start the server:
 ```bash
 npm run dev
 ```
