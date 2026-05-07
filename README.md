@@ -11,8 +11,8 @@
 
 <h3>🛠️ Technologies:</h3>
 
-- React
-- Sass
+-`
+- `Sass`
 
 
 <h3>💻 Functionalities:</h3>
