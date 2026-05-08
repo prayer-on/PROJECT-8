@@ -42,12 +42,12 @@ To run this project locally, you can follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/prayer-on/PROJECT-8.git
+git clone https://github.com/prayer-on/portfolio.git
 ```
 
 2. Select the Project folder:
 ```bash
-cd PROJECT-8
+cd portfolio
 ```
 
 3. Install dependencies:
