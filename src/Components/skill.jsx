@@ -13,6 +13,9 @@ import aiSvg from "../assets/openai.svg"
 import sassSvg from "../assets/sass.svg"
 import gitHubSvg from "../assets/github_light.svg"
 import gitSvg from "../assets/git.svg"
+import vercelSvg from "../assets/vercel.svg"
+import renderSvg from "../assets/render_black.svg"
+
 
 
 function Skill () {
@@ -34,11 +37,12 @@ function Skill () {
 </div>
 
 <div className="wrapper-tools">
-    <Language image={illustratorSvg} name="Adobe Illustrator"/>
     <Language image={notionSvg} name="Notion"/>
     <Language image={aiSvg} name="ChatGPT"/>
     <Language image={gitHubSvg} name="GitHub"/>
     <Language image={gitSvg} name="Git"/>
+    <Language image={vercelSvg} name="Vercel"/>
+    <Language image={renderSvg} name="Render"/>
 </div>
 </>
     );
