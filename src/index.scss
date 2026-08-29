@@ -208,7 +208,7 @@ border-radius: 5px;
 background-color: $white;
 color: $black;
 width: 9rem;
-transition: background-color 0.15s ease; 
+transition: background-color 0.3s ease; 
 
 
 &:hover{
@@ -276,22 +276,23 @@ div {
 
 .wrapper-card {
     border-radius: 10px;
+    border: 1.5px solid transparent;
     box-shadow: 0 0 0 1px $primary-color;
     min-width: 33vw;
     max-height: 65vh;
     margin: 0 20vw;
     margin-bottom: 20px;
     overflow: hidden;
-    transition: border 0.1s ease-out;
+    transition: border-color 0.2s ease-in;
     cursor: pointer;
 
 &:hover {
-    border: 2.5px solid $primary-color;
+    border-color: $primary-color;
 }
 
 &:focus{
     animation: card-rotation 1s ease 0.1s;
-    border: 2.5px solid $primary-color;
+    border-color: $primary-color;
 }
 
 img {
@@ -333,15 +334,15 @@ p {
 button {
     width: 7vw;
     border-radius: 30px;
-    border: none;
+    border: 1.5px solid transparent;
     box-shadow: 0 0 0 1px $primary-color;
     background-color: $white;
-    padding: 5px 15px;
+    padding: 7px 15px;
     cursor: default;
-    transition: border 0.15s ease-in;
+    transition: border-color 0.15s ease-in;
     
 &:hover {
-    border: 1.5px solid $primary-color;
+    border-color: $primary-color;
 }
 
 img {
