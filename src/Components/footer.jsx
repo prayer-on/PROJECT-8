@@ -33,9 +33,9 @@ function Footer () {
             <h2>CONTACT ME</h2>
             <form ref={formRef} onSubmit={messageDisplay}>
                 <label htmlFor= "email-address">EMAIL-ADDRESS:</label>
-                <input type="email" id="email-address" name="email_contact" placeholder="william.otten@gmail.com" required/>
+                <input type="email" id="email-address" name="email_contact" placeholder="william.owen@gmail.com" required/>
                 <label htmlFor="text-area">MESSAGE:</label>
-                <textarea id="text-area" name="text_message" placeholder="Message here..." required></textarea>
+                <textarea id="text-area" name="text_message" placeholder="Type here..." required></textarea>
                 <button type="submit">SEND</button>
             </form>
             </>)}
