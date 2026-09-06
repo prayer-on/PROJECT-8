@@ -364,20 +364,24 @@ main {
 
 .wrapper-frontend {
     @include wrapper-language;
-    box-shadow: -6px 3px 10px -10px;
+    box-shadow: -7px 0px 9px -9px;
 }
 
 .wrapper-backend {
     @include wrapper-language;
-    box-shadow: 6px 0px 10px -10px;
+    box-shadow: 7px -3px 9px -9px;
 }
 
 .wrapper-tools {
     @include wrapper-language;
-    box-shadow: -6px -3px 10px -10px;
-    margin-bottom: 20vh;
+    box-shadow: -7px -3px 9px -9px;
 }
 
+.wrapper-adobe {
+     @include wrapper-language;
+    box-shadow: 7px -3px 9px -9px;
+    margin-bottom: 20vh;
+}
 /* contact */
 
 footer {
@@ -395,6 +399,7 @@ h2 {
     align-self: center;
     margin-bottom: 5vh;
     font-weight: 500;
+    font-style: italic;
 }
 }
 
@@ -407,10 +412,11 @@ footer form {
 
 label {
        font-size: 11px;
-       font-weight: 400;
+       font-weight: 600;
        letter-spacing: 1px;
        color: $white;
        font-family: $second-font;
+       font-style: italic
     }
 
 input {

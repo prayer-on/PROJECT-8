@@ -8,6 +8,7 @@ import nodeSvg from "../assets/nodejs-icon-logo-svgrepo-com.svg"
 import expressSvg from "../assets/expressjs.svg"
 import mongoDBSvg from "../assets/mongo-svgrepo-com.svg"
 import illustratorSvg from "../assets/illustrator.svg"
+import photoshopSvg from "../assets/photoshop.svg"
 import notionSvg from "../assets/notion.svg"
 import aiSvg from "../assets/openai.svg"
 import sassSvg from "../assets/sass.svg"
@@ -44,6 +45,15 @@ function Skill () {
     <Language image={vercelSvg} name="Vercel"/>
     <Language image={renderSvg} name="Render"/>
 </div>
+
+<div className="wrapper-adobe">
+    <Language image={illustratorSvg} name="Illustrator"/>
+    <Language image={photoshopSvg} name="PhotoShop"/>
+</div>
+
+
+
+
 </>
     );
 }
